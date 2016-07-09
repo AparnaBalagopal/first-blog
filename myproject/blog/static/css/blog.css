@@ -3,17 +3,18 @@ h1 a {
     font-family: 'Lobster';
 }
 body {
+	background-color: #BDF2F1;
     padding-left: 15px;
 }
 .page-header {
-    background-color: #ff9400;
+    background-color: #F5569D;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
+    color: #F0FC00;
+    font-size: 48pt;
     text-decoration: none;
 }
 
@@ -49,6 +50,6 @@ h1, h2, h3, h4 {
 }
 
 .post h1 a, .post h1 a:visited {
-    color: #000000;
+    color: #4D023F;
 }
 
