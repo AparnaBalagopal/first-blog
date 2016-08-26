@@ -1,0 +1,67 @@
+{% extends 'blog/base.html' %}
+ 
+
+
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<style>
+table, th, td {
+    border: 0px solid black;
+}
+</style>
+<script>
+function validateForm() {
+    var mail = document.forms["myForm"]["email"].value;
+var psd = document.forms["myForm"]["password"].value;
+    var atpos = mail.indexOf("@");
+    var dotpos = mail.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=mail.length) {
+        alert("Not a valid e-mail address");
+        return false;
+
+   }
+if (psd == null || psd == "") {
+        alert("Not a valid Password");
+        return false;
+    }
+
+}
+
+
+</script>
+
+
+
+
+  <section class="container">
+    <div class="login">
+    
+    
+    <div id="section"><br><br>
+      <h1><center>Login As<font color="red"> Admin</font></center></h1><br>
+       </div>
+
+         <form name="myForm" action="/class_info/" onsubmit="return validateForm();" method="post">
+
+
+        
+
+        <input type='hidden' name='csrfmiddlewaretoken' value='wu5eSIDElr8EsVDgXmHmFNCCmSLdhyK5' />
+         <input type='hidden' name='csrfmiddlewaretoken' value='wu5eSIDElr8EsVDgXmHmFNCCmSLdhyK5' />
+
+      
+     <div class="text">
+        <p><center><input type="text" name="email"  placeholder="Username or Email"></p></center>
+        <p><center><input type="password" name="password" placeholder="Password"></p></center>
+        <p class="remember_me">
+        
+
+            
+          
+        </p>
+        <center><p class="submit"><input type="submit" name="commit" value="Login"></p></center>
+      </form>
+    </div>
+
+    
+  </section>
+
