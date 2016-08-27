@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
-
+# Create your models here.
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
@@ -17,11 +17,3 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-
-class Attendance(models.Model):
-   
-    name = models.CharField(max_length=100)
-    attendance = models.CharField(max_length=100)                                   
-
-    def __unicode__(self):
-        return "{0} {1} {2} {3} {4}".format(self, self.name, self.attendance)

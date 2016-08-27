@@ -1,30 +1,34 @@
 h1 a {
-    color: #FA0FE6;
-    font-family: 'Arial';
-}
-body {
-	
-	padding-left: 15px;
-}
-.page-header {
-	background-color: #F5569D;
-	margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    color: #D66EF0;
+    font-family: 'Lobster';
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active, .page-header img {
+body {
     
-    color: #F0FC00;
-    font-size: 48pt;
+   padding-left: 15px;
+   
+}
+
+.page-header {
+
+    background-color: #6ED3F5;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 50pt;
     text-decoration: none;
 }
 
 .content {
-	margin-left: 40px;
+    margin-left: 40px;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Arial', cursive;
+    font-family: 'Lobster', cursive;
 }
 
 .date {
@@ -51,6 +55,5 @@ h1, h2, h3, h4 {
 }
 
 .post h1 a, .post h1 a:visited {
-    color: #4D023F;
+    color: #4588F5;
 }
-
